@@ -52,8 +52,9 @@ class LearningAgent(Agent):
             #self.epsilon = self.epsilon - 0.05 for question 6
             
             self.x += 1
-            self.epsilon = math.exp(-self.alpha*self.x)
-            #self.epsilon = math.fabs(math.cos(self.alpha*self.x))
+            self.epsilon = math.exp(-0.001*self.x) # Added based suggestion # 0.001 worked
+            #self.epsilon = math.exp(-a*self.x) # Worked before
+            #self.epsilon = math.fabs(math.cos(a*self.x))
             # self.epsilon = 1.0/(self.x**2)
             # self.epsilon = self.alpha**self.x
             
@@ -75,7 +76,9 @@ class LearningAgent(Agent):
         ###########
         # Set 'state' as a tuple of relevant data for the agent        
         
-        state = (inputs['light'], inputs['left'], inputs['right'], inputs['oncoming'],waypoint) 
+
+       
+        state = (inputs['light'], inputs['left'], inputs['oncoming'],waypoint) # Added after suggestion
         
         return state
 
@@ -133,7 +136,7 @@ class LearningAgent(Agent):
         # When learning, choose a random action with 'epsilon' probability
         #   Otherwise, choose an action with the highest Q-value for the current state                                
         
-        if self.learning and random.random > self.epsilon:
+        if self.learning and random.random() > self.epsilon:# fixed bug random.random()
             
             maxQactions = []
             for action, Q in self.Q[state].items():
@@ -198,7 +201,7 @@ def run():
     #   learning   - set to True to force the driving agent to use Q-learning
     #    * epsilon - continuous value for the exploration factor, default is 1
     #    * alpha   - continuous value for the learning rate, default is 0.5
-    agent = env.create_agent(LearningAgent, learning = True, alpha=0.003, epsilon=1) ## learning = Fasle question 7 ## changed alpha=0.003, 0.01 ## alpha=0.001 worked
+    agent = env.create_agent(LearningAgent, learning = True, alpha=0.5, epsilon=1) ## learning = Fasle question 7 ## changed alpha=0.003, 0.01 ## alpha=0.001 worked, ## alpha=0.0001 didn't work
     
     ##############
     # Follow the driving agent
@@ -213,14 +216,14 @@ def run():
     #   display      - set to False to disable the GUI if PyGame is enabled
     #   log_metrics  - set to True to log trial and simulation results to /logs
     #   optimized    - set to True to change the default log file name
-    sim = Simulator(env, update_delay = 0.001, log_metrics = True, display = False, optimized = True) ## Simulator(env) modified for question 7
+    sim = Simulator(env, update_delay = 0.0001, log_metrics = True, display = False, optimized = True) ## Simulator(env) modified for question 7
     
     ##############
     # Run the simulator
     # Flags:
     #   tolerance  - epsilon tolerance before beginning testing, default is 0.05 
     #   n_test     - discrete number of testing trials to perform, default is 0
-    sim.run(n_test=100, tolerance=0.001)##sim.run() modified for question 7 # tolerance=0.01, 0.001
+    sim.run(n_test=100, tolerance=0.01)##sim.run() modified for question 7 # tolerance=0.01, 0.001
 
 
 if __name__ == '__main__':
