@@ -17,7 +17,7 @@ bash anaconda.sh -b -p /opt/anaconda
 echo 'export PATH="/opt/anaconda/bin:$PATH"' >> /etc/profile.d/anaconda.sh
 source /opt/anaconda/bin/activate
 
-# clone repos
+# Clone repos
 mkdir -p /home/scotsditch/repos
 cd /home/scotsditch/repos
 git clone https://github.com/scotsditch/ScotShieldsWorkSamples.git
@@ -31,14 +31,5 @@ cp /tmp/llm_110623.yml /opt/setup/
 cp /tmp/web_scrape_etl.yml /opt/setup/
 
 /opt/anaconda/bin/conda env create -f /opt/setup/web_scrape_etl.yml
-
 sleep 300
-
 /opt/anaconda/bin/conda env create -f /opt/setup/llm_110623.yml
-
-# initialize conda
-# cd /home/scotsditch/
-# conda init
-
-
-
