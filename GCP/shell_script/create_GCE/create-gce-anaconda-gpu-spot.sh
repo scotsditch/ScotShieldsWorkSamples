@@ -2,11 +2,11 @@
 
 # -------- CONFIG --------
 INSTANCE_NAME="ubuntu-anaconda-gpu-spot"
-ZONES=("us-west1-a" "us-west1-b" "us-west1-c" "us-east4-a" "us-east4-b" "us-east4-c" "us-east5-a" "us-east5-b" "us-east5-c")
+ZONES=("us-central1-a" "us-central1-b" "us-central1-c" "us-central1-f" "us-east1-c" "us-east1-d" "us-east4-a" "us-east4-b" "us-east4-c" "us-west1-a" "us-west1-b" "us-west2-c" "us-west3-b" "us-west4-a" "us-west4-b")
 IMAGE_FAMILY="ubuntu-2204-lts"
 IMAGE_PROJECT="ubuntu-os-cloud"
 MACHINE_TYPE="n1-standard-4"
-STARTUP_SCRIPT="gce-startup-anaconda-gpu.sh"
+STARTUP_SCRIPT="gce-startup-anaconda-gpu-spot.sh"
 FILES_FOLDER="gce-files"
 
 # -------- PREPARE --------
