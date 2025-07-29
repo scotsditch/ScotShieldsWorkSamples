@@ -1,0 +1,58 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:139.0) Gecko/20100101 Firefox/139.0" version="27.2.0">
+  <diagram name="Page-1" id="E4t_aL6UhNQgS0r_0Jj9">
+    <mxGraphModel dx="1301" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="VJVgO26HRUgx-7z0N9VW-1" value="App Developer" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="80" y="70" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VJVgO26HRUgx-7z0N9VW-4" value="&lt;blockquote&gt;&lt;div align=&quot;left&quot;&gt;OpenAPI config&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;A2A Details&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;Guardrails Config&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;Monitoring (LLMops, FinOps...)&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;Governance (Grounding, COT...)&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;App Code&lt;/div&gt;&lt;/blockquote&gt;" style="rounded=1;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
+          <mxGeometry x="210" y="60" width="270" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="VJVgO26HRUgx-7z0N9VW-5" value="&lt;div&gt;Devops&lt;/div&gt;&lt;div&gt;CICD&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="280" y="250" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VJVgO26HRUgx-7z0N9VW-6" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;API MANAGER&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;Proxi Mapping&lt;/div&gt;&lt;div&gt;API Keys&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="450" width="120" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="VJVgO26HRUgx-7z0N9VW-7" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 17px;&quot;&gt;APP REGISTRY RAG&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;A2A Agent Card&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="240" y="450" width="180" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="VJVgO26HRUgx-7z0N9VW-8" value="&lt;div&gt;&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;KUBERNETES&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;APP Code&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="570" y="450" width="170" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="VJVgO26HRUgx-7z0N9VW-10" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.005;entryY=0.41;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="VJVgO26HRUgx-7z0N9VW-1" target="VJVgO26HRUgx-7z0N9VW-4">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="440" as="sourcePoint" />
+            <mxPoint x="450" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VJVgO26HRUgx-7z0N9VW-11" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.421;exitY=0.97;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.375;entryY=-0.05;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="VJVgO26HRUgx-7z0N9VW-4" target="VJVgO26HRUgx-7z0N9VW-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="440" as="sourcePoint" />
+            <mxPoint x="450" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VJVgO26HRUgx-7z0N9VW-13" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.642;exitY=1.017;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.45;entryY=-0.044;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="VJVgO26HRUgx-7z0N9VW-5" target="VJVgO26HRUgx-7z0N9VW-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="440" as="sourcePoint" />
+            <mxPoint x="450" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VJVgO26HRUgx-7z0N9VW-14" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.808;exitY=1.05;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.418;entryY=-0.03;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="VJVgO26HRUgx-7z0N9VW-5" target="VJVgO26HRUgx-7z0N9VW-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="440" as="sourcePoint" />
+            <mxPoint x="450" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="VJVgO26HRUgx-7z0N9VW-15" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.333;exitY=1.033;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.575;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="VJVgO26HRUgx-7z0N9VW-5" target="VJVgO26HRUgx-7z0N9VW-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="440" as="sourcePoint" />
+            <mxPoint x="450" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
