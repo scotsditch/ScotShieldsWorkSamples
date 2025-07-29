@@ -1,4 +1,4 @@
-# ADK Short Bot
+# ADK Test Bot
 
 A Python-based agent that creates summary sentence for messages using Google's Agent Development Kit (ADK) and Vertex AI.
 
